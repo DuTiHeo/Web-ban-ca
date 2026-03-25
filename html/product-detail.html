@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiet san pham | Aqualife</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/product-detail.css" />
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/product-detail.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="home.html">Aqualife</a>
+      <nav class="main-nav">
+        <a href="home.html">Trang chu</a>
+        <a href="about.html">About</a>
+        <a class="active" href="products.html">San pham</a>
+        <a href="contact.html">Lien he</a>
+        <a href="auth.html">Dang nhap</a>
+      </nav>
+      <a class="cart-link" href="cart.html">Gio hang <span class="badge" data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <p><a class="btn btn-ghost" href="products.html">← Quay lai danh sach</a></p>
+
+      <section class="detail">
+        <div class="detail-media">
+          <img id="detail-image" src="../image/ocean-bg.svg" alt="San pham" />
+        </div>
+
+        <article class="card detail-info">
+          <h1 id="detail-name">Dang tai...</h1>
+          <p class="price" id="detail-price"></p>
+          <p><strong>Danh muc:</strong> <span id="detail-category"></span></p>
+          <p class="muted" id="detail-description"></p>
+          <p><strong>Ton kho:</strong> <span id="detail-stock"></span></p>
+
+          <div class="inline-form">
+            <input id="detail-quantity" class="input" type="number" min="1" value="1" />
+            <button id="detail-add" class="btn btn-primary" type="button">Them vao gio</button>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="related-title">San pham lien quan</h2>
+      <div id="related-products" class="grid grid-3"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Aqualife</span>
+      <a href="index.html">So do trang</a>
+    </div>
+  </footer>
+</body>
+</html>

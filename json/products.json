@@ -1,0 +1,62 @@
+[
+  {
+    "id": "betta-halfmoon",
+    "name": "Betta Halfmoon",
+    "category": "Ca nuoc ngot",
+    "price": 480000,
+    "stock": 8,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Mau sac ruc ro, vay xoe dep, phu hop ho mini va ho trung.",
+    "description": "Betta Halfmoon la dong ca canh de nuoi, hinh dang duoi dep, mau sac bat mat. Nen duy tri nuoc sach va nhiet do on dinh de ca phat trien tot."
+  },
+  {
+    "id": "discus-blue",
+    "name": "Discus Blue Diamond",
+    "category": "Ca nuoc ngot",
+    "price": 1200000,
+    "stock": 5,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Dong ca dia cao cap, than tron, mau xanh ngoc.",
+    "description": "Discus Blue Diamond yeu cau moi truong nuoc on dinh, loc tot va nhiet do phu hop. Rat hop cho nguoi choi ho thuy sinh cao cap."
+  },
+  {
+    "id": "koi-kohaku",
+    "name": "Koi Kohaku",
+    "category": "Ca ho ngoai troi",
+    "price": 4500000,
+    "stock": 3,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Koi mau trang do co dien, phu hop ho san vuon.",
+    "description": "Koi Kohaku duoc ua chuong boi hoa tiet do trang ro net. Can he thong loc manh va khong gian boi rong."
+  },
+  {
+    "id": "clownfish-ocellaris",
+    "name": "Clownfish Ocellaris",
+    "category": "Ca nuoc man",
+    "price": 250000,
+    "stock": 14,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ca he mau cam trang, de thuong, de quan sat.",
+    "description": "Clownfish Ocellaris phu hop cho be nuoc man co he vi sinh on dinh. Nen ghep voi sinh vat hoa binh."
+  },
+  {
+    "id": "mandarin-dragonet",
+    "name": "Mandarin Dragonet",
+    "category": "Ca nuoc man",
+    "price": 850000,
+    "stock": 4,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Mau sac doc dao, hoa tiet noi bat, gia tri trung bay cao.",
+    "description": "Mandarin Dragonet can he sinh thai da dang vi chung an vi sinh vat nho. Phu hop cho nguoi da co kinh nghiem."
+  },
+  {
+    "id": "neon-tetra",
+    "name": "Neon Tetra",
+    "category": "Ca nuoc ngot",
+    "price": 45000,
+    "stock": 60,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ca dan nho, boi theo nhom, mau xanh do noi bat.",
+    "description": "Neon Tetra ly tuong cho nguoi moi choi. Nen nuoi theo dan de ca tu tin va tao hieu ung tham my dep."
+  }
+]

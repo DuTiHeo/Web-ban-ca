@@ -1,0 +1,26 @@
+.about-hero {
+  border-radius: 14px;
+  padding: 24px;
+  background: linear-gradient(130deg, #e8f3fb, #f7fcff);
+  border: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.about-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

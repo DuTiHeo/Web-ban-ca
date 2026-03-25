@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dang nhap | Aqualife</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/auth.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="home.html">Aqualife</a>
+      <nav class="main-nav">
+        <a href="home.html">Trang chu</a>
+        <a href="about.html">About</a>
+        <a href="products.html">San pham</a>
+        <a href="contact.html">Lien he</a>
+        <a class="active" href="auth.html">Dang nhap</a>
+      </nav>
+      <a class="cart-link" href="cart.html">Gio hang <span class="badge" data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main class="page auth-wrap">
+    <div class="container">
+      <section class="card auth-card">
+        <div class="auth-head">
+          <h1>Dang nhap</h1>
+          <p class="muted">Nhap thong tin de truy cap tai khoan.</p>
+        </div>
+
+        <form id="auth-form" class="grid" style="gap:10px;">
+          <input class="input" name="email" type="email" placeholder="Email" />
+          <input class="input" name="password" type="password" placeholder="Mat khau" />
+          <button class="btn btn-primary" type="submit">Dang nhap</button>
+        </form>
+
+        <div id="auth-result" class="alert hidden"></div>
+        <p class="muted">Chua co tai khoan? <a href="register.html"><strong>Dang ky</strong></a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Aqualife</span>
+      <a href="index.html">So do trang</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lien he | Aqualife</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/contact.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="home.html">Aqualife</a>
+      <nav class="main-nav">
+        <a href="home.html">Trang chu</a>
+        <a href="about.html">About</a>
+        <a href="products.html">San pham</a>
+        <a class="active" href="contact.html">Lien he</a>
+        <a href="auth.html">Dang nhap</a>
+      </nav>
+      <a class="cart-link" href="cart.html">Gio hang <span class="badge" data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Lien he Aqualife</h1>
+      <div class="contact-grid">
+        <section class="card">
+          <form id="contact-form">
+            <div class="grid" style="gap:10px;">
+              <input class="input" type="text" name="name" placeholder="Ho va ten" />
+              <input class="input" type="email" name="email" placeholder="Email" />
+              <textarea class="textarea" name="message" placeholder="Noi dung lien he"></textarea>
+              <button class="btn btn-primary" type="submit">Gui lien he</button>
+            </div>
+          </form>
+          <div id="contact-result" class="alert hidden"></div>
+        </section>
+
+        <aside class="card contact-meta">
+          <div class="line"><strong>Dia chi:</strong> 123 Duong Hai Dao, TP.HCM</div>
+          <div class="line"><strong>Dien thoai:</strong> 0900 123 456</div>
+          <div class="line"><strong>Email:</strong> hello@aqualife.vn</div>
+          <div class="line"><strong>Gio lam viec:</strong> 8:00 - 20:00 (T2 - CN)</div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Aqualife</span>
+      <a href="index.html">So do trang</a>
+    </div>
+  </footer>
+</body>
+</html>
