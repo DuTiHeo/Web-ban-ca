@@ -2,7 +2,7 @@
   {
     "id": "betta-halfmoon",
     "name": "Betta Halfmoon",
-    "category": "Ca nuoc ngot",
+    "category": "freshwater",
     "price": 480000,
     "stock": 8,
     "image": "../image/ocean-bg.svg",
@@ -12,7 +12,7 @@
   {
     "id": "discus-blue",
     "name": "Discus Blue Diamond",
-    "category": "Ca nuoc ngot",
+    "category": "freshwater",
     "price": 1200000,
     "stock": 5,
     "image": "../image/ocean-bg.svg",
@@ -22,7 +22,7 @@
   {
     "id": "koi-kohaku",
     "name": "Koi Kohaku",
-    "category": "Ca ho ngoai troi",
+    "category": "freshwater",
     "price": 4500000,
     "stock": 3,
     "image": "../image/ocean-bg.svg",
@@ -32,7 +32,7 @@
   {
     "id": "clownfish-ocellaris",
     "name": "Clownfish Ocellaris",
-    "category": "Ca nuoc man",
+    "category": "saltwater",
     "price": 250000,
     "stock": 14,
     "image": "../image/ocean-bg.svg",
@@ -42,7 +42,7 @@
   {
     "id": "mandarin-dragonet",
     "name": "Mandarin Dragonet",
-    "category": "Ca nuoc man",
+    "category": "saltwater",
     "price": 850000,
     "stock": 4,
     "image": "../image/ocean-bg.svg",
@@ -52,11 +52,31 @@
   {
     "id": "neon-tetra",
     "name": "Neon Tetra",
-    "category": "Ca nuoc ngot",
+    "category": "freshwater",
     "price": 45000,
     "stock": 60,
     "image": "../image/ocean-bg.svg",
     "shortDescription": "Ca dan nho, boi theo nhom, mau xanh do noi bat.",
     "description": "Neon Tetra ly tuong cho nguoi moi choi. Nen nuoi theo dan de ca tu tin va tao hieu ung tham my dep."
+  },
+  {
+    "id": "puffer-fig",
+    "name": "Puffer Fig",
+    "category": "brackish",
+    "price": 350000,
+    "stock": 7,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ca noi tieng, mau vang, co the phu phong khi co cam thay de doa.",
+    "description": "Puffer Fig la dong ca duoi ham, can moi truong nuoc lợ on dinh. Phu hop cho ho ca dang thuc."
+  },
+  {
+    "id": "archerfish-spotted",
+    "name": "Archerfish Spotted",
+    "category": "brackish",
+    "price": 280000,
+    "stock": 5,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ca ban ca, co the niem nuoc va ban dich su ton ca o bai dat, co tram tim.",
+    "description": "Archerfish Spotted la dong ca thong minh va hang hay. Can ky nang quan ly nuoc lợ va khong gian boi rong."
   }
 ]

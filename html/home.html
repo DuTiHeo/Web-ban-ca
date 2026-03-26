@@ -20,45 +20,116 @@
         <a href="contact.html">Lien he</a>
         <a href="auth.html">Dang nhap</a>
       </nav>
-      <a class="cart-link" href="cart.html">Gio hang <span class="badge" data-cart-count>0</span></a>
+      <a class="cart-link" href="cart.html">Gio hang <span class="badge" id="count" data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main class="page">
-    <div class="container">
-      <section class="hero">
-        <h1>Web ban ca canh Aqualife</h1>
-        <p>
-          Chuyen cac dong ca nuoc ngot, nuoc man va phu kien ho ca. Du an da duoc chuan hoa
-          lai toan bo lien ket noi bo, khong con script mang va luong dieu huong da ro rang.
-        </p>
-      </section>
+      <!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Tận hưởng vẻ đẹp đại dương ngay tại nhà</h1>
+    <button onclick="window.location.href='products.html'">Mua ngay</button>
+  </div>
+</div>
 
-      <section>
-        <h2 class="section-title">Danh muc noi bat</h2>
-        <div class="grid grid-4">
-          <div class="category-chip">Ca nuoc ngot</div>
-          <div class="category-chip">Ca nuoc man</div>
-          <div class="category-chip">Ca ho ngoai troi</div>
-          <div class="category-chip">Phu kien ho ca</div>
-        </div>
-      </section>
+<!-- CATEGORY -->
+<div class="section">
+  <h2>Danh mục</h2>
+  <div class="categories">
+    <a href="products.html?category=freshwater" class="card">🐟 Nước ngọt (Freshwater)</a>
+    <a href="products.html?category=brackish" class="card">🪸 Nước lợ (Brackish)</a>
+    <a href="products.html?category=saltwater" class="card">🌊 Nước mặn (Saltwater)</a>
+  </div>
+</div>
 
-      <section>
-        <div class="section-head">
-          <h2 class="section-title">San pham de xuat</h2>
-          <a class="btn btn-ghost" href="products.html">Xem tat ca</a>
-        </div>
-        <div id="featured-products" class="grid grid-4"></div>
-      </section>
+<!-- PRODUCTS -->
+<div class="section">
+  <h2>Sản phẩm nổi bật</h2>
+  <div class="products" id="product-list"></div>
+</div>
+
+<!-- CART -->
+<div class="cart-box" id="cartBox">
+  <h4>Giỏ hàng</h4>
+  <ul id="cart-items"></ul>
+</div>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <p class="tag">PREMIUM EXPERIENCE</p>
+  <h2>"Tiếng vọng từ đại dương"</h2>
+  <p class="sub">Lắng nghe những chia sẻ từ những người cùng đam mê.</p>
+
+  <div class="testimonial-wrapper">
+
+    <!-- LEFT -->
+    <div class="testimonial-left">
+      <div class="stars">★★★★★</div>
+      <p class="quote">
+        "Chưa bao giờ tôi nhận được những chú cá khỏe mạnh và màu sắc tuyệt vời như vậy khi mua online. Aqualife thực sự là nơi uy tín nhất."
+      </p>
+      <div class="author">
+        <strong>Anh Minh Hoàng</strong>
+        <span>Người chơi cá lâu năm</span>
+      </div>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <span>© 2026 Aqualife</span>
-      <a href="index.html">So do trang</a>
+    <!-- RIGHT -->
+    <div class="testimonial-right">
+      <p class="quote">
+        "Dịch vụ thiết kế bể cá biển của Aqualife đã biến phòng khách của tôi thành một thủy cung thu nhỏ đầy nghệ thuật. Đội ngũ kỹ thuật rất tận tâm."
+      </p>
+      <div class="author">
+        <strong>Chị Thu Thủy</strong>
+        <span>CEO nội thất</span>
+      </div>
     </div>
-  </footer>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Aqualife</h3>
+      <p>Mang cả hệ sinh thái biển vào không gian sống của bạn với dịch vụ và sản phẩm cao cấp.</p>
+      <div class="social">
+        <span>🌐</span>
+        <span>📘</span>
+        <span>📸</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>CONTACT INFO</h4>
+      <p>📍 123 Đường Hải Đảo, TP. HCM</p>
+      <p>📞 +84 900 123 456</p>
+      <p>✉ hello@aqualife.vn</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <p>Về chúng tôi</p>
+      <p>Chính sách vận chuyển</p>
+      <p>Hướng dẫn mua hàng</p>
+      <p>Điều khoản & điều kiện</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>NEWSLETTER</h4>
+      <p>Đăng ký để nhận thông tin mới</p>
+      <div class="newsletter">
+        <input type="text" placeholder="Email của bạn">
+        <button>→</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Aqualife. The Ocean Curator.
+  </div>
 </body>
 </html>

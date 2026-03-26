@@ -13,6 +13,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       .map((cat) => `<option value="${cat}">${cat === "tat-ca" ? "Tat ca danh muc" : cat}</option>`)
       .join("");
 
+    // Lấy category từ URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryFromUrl = urlParams.get("category");
+    
+    // Ánh xạ category từ URL sang giá trị category thực tế
+    const categoryMap = {
+      "freshwater": "freshwater",
+      "brackish": "brackish",
+      "saltwater": "saltwater"
+    };
+    
+    if (categoryFromUrl && categoryMap[categoryFromUrl]) {
+      categoryEl.value = categoryMap[categoryFromUrl];
+    }
+
     const render = () => {
       const keyword = searchEl.value.trim().toLowerCase();
       const category = categoryEl.value;
