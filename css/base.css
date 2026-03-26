@@ -164,6 +164,13 @@ img {
   color: var(--primary-dark);
 }
 
+.quantity {
+  background: #edf6fd;
+  color: var(--primary-dark);
+  padding: 8px 14px  ;
+  border-radius: 10px;
+}
+
 .btn-danger {
   background: #ffe9e9;
   color: var(--danger);
@@ -193,7 +200,7 @@ img {
   resize: vertical;
 }
 
-.price {
+.price, .quantity {
   color: var(--primary-dark);
   font-weight: 800;
 }
