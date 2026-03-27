@@ -1,82 +1,189 @@
 [
   {
-    "id": "betta-halfmoon",
-    "name": "Betta Halfmoon",
-    "category": "freshwater",
+    "id": "ca-betta-nua-mat-troi",
+    "name": "Cá Betta Nữa Mặt Trời",
+    "species": "Cá",
+    "waterType": "Nước ngọt",
     "price": 480000,
     "stock": 8,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Mau sac ruc ro, vay xoe dep, phu hop ho mini va ho trung.",
-    "description": "Betta Halfmoon la dong ca canh de nuoi, hinh dang duoi dep, mau sac bat mat. Nen duy tri nuoc sach va nhiet do on dinh de ca phat trien tot."
+    "shortDescription": "Màu sắc rực rỡ, vây xoè đẹp, phù hợp hồ mini và hồ trung.",
+    "description": "Cá Betta Nữa Mặt Trời là một loài cá cảnh dễ nuôi, hình dáng đuôi đẹp và màu sắc bắt mắt. Nên duy trì nước sạch, nhiệt độ ổn định từ 24-28°C để cá phát triển tốt. Cá này rất hung dữ với những con cá khác cùng giới tính, nên nuôi riêng hoặc ghép cùng cá cảnh yên tĩnh."
   },
   {
-    "id": "discus-blue",
-    "name": "Discus Blue Diamond",
-    "category": "freshwater",
+    "id": "ca-dia-xanh-kim-cuong",
+    "name": "Cá Đĩa Xanh Kim Cương",
+    "species": "Cá",
+    "waterType": "Nước ngọt",
     "price": 1200000,
     "stock": 5,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Dong ca dia cao cap, than tron, mau xanh ngoc.",
-    "description": "Discus Blue Diamond yeu cau moi truong nuoc on dinh, loc tot va nhiet do phu hop. Rat hop cho nguoi choi ho thuy sinh cao cap."
+    "shortDescription": "Loài cá đĩa cao cấp, thân tròn, màu xanh ngọc.",
+    "description": "Cá Đĩa Xanh Kim Cương yêu cầu môi trường nước ổn định, hệ lọc tốt và nhiệt độ phù hợp từ 26-30°C. Rất phù hợp cho người chơi hồ thủy sinh cao cấp. Loài này cần thức ăn chất lượng cao và môi trường sạch sẽ để phát triển tốt nhất."
   },
   {
-    "id": "koi-kohaku",
-    "name": "Koi Kohaku",
-    "category": "freshwater",
+    "id": "ca-koi-kohaku",
+    "name": "Cá Koi Kohaku",
+    "species": "Cá",
+    "waterType": "Nước ngọt",
     "price": 4500000,
     "stock": 3,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Koi mau trang do co dien, phu hop ho san vuon.",
-    "description": "Koi Kohaku duoc ua chuong boi hoa tiet do trang ro net. Can he thong loc manh va khong gian boi rong."
+    "shortDescription": "Koi màu trắng đỏ cổ điển, phù hợp hồ sân vườn.",
+    "description": "Cá Koi Kohaku được ưa chuộng bởi hoa tiết đỏ trắng rõ nét. Cần hệ thống lọc mạnh và không gian bơi rộng (tối thiểu 1000 lít). Nhiệt độ nước phù hợp từ 20-26°C. Đây là loài cá cảnh sang trọng, sống lâu và dễ tương tác với con người."
   },
   {
-    "id": "clownfish-ocellaris",
-    "name": "Clownfish Ocellaris",
-    "category": "saltwater",
+    "id": "ca-he-cam",
+    "name": "Cá Hề Cam",
+    "species": "Cá",
+    "waterType": "Nước mặn",
     "price": 250000,
     "stock": 14,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Ca he mau cam trang, de thuong, de quan sat.",
-    "description": "Clownfish Ocellaris phu hop cho be nuoc man co he vi sinh on dinh. Nen ghep voi sinh vat hoa binh."
+    "shortDescription": "Cá hề màu cam trắng, dễ thương, dễ quan sát.",
+    "description": "Cá Hề Cam phù hợp cho bể nước mặn có hệ vi sinh ổn định. Nên ghép với san hô anemone để cá ẩn náu. Nhiệt độ nước từ 24-27°C, độ mặn 1.020-1.025. Loài này dễ nuôi và rất phù hợp cho người mới bắt đầu chơi thủy sinh mặn."
   },
   {
-    "id": "mandarin-dragonet",
-    "name": "Mandarin Dragonet",
-    "category": "saltwater",
+    "id": "ca-rong-mandarin",
+    "name": "Cá Rồng Mandarin",
+    "species": "Cá",
+    "waterType": "Nước mặn",
     "price": 850000,
     "stock": 4,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Mau sac doc dao, hoa tiet noi bat, gia tri trung bay cao.",
-    "description": "Mandarin Dragonet can he sinh thai da dang vi chung an vi sinh vat nho. Phu hop cho nguoi da co kinh nghiem."
+    "shortDescription": "Màu sắc độc đáo, hoa tiết nổi bật, giá trị trưng bày cao.",
+    "description": "Cá Rồng Mandarin cần hệ sinh thái đa dạng vì chúng ăn vi sinh vật nhỏ. Phù hợp cho người đã có kinh nghiệm chơi thủy sinh mặn. Nhiệt độ từ 24-27°C, độ mặn 1.020-1.025. Loài này rất đẹp nhưng khó nuôi, cần môi trường ổn định."
   },
   {
-    "id": "neon-tetra",
-    "name": "Neon Tetra",
-    "category": "freshwater",
+    "id": "ca-tetra-neon",
+    "name": "Cá Tetra Neon",
+    "species": "Cá",
+    "waterType": "Nước ngọt",
     "price": 45000,
     "stock": 60,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Ca dan nho, boi theo nhom, mau xanh do noi bat.",
-    "description": "Neon Tetra ly tuong cho nguoi moi choi. Nen nuoi theo dan de ca tu tin va tao hieu ung tham my dep."
+    "shortDescription": "Cá đàn nhỏ, bơi theo nhóm, màu xanh đỏ nổi bật.",
+    "description": "Cá Tetra Neon lý tưởng cho người mới chơi. Nên nuôi theo đàn (tối thiểu 6 con) để cá tự tin và tạo hiệu ứng thẩm mỹ đẹp. Nhiệt độ từ 22-26°C. Loài này thích bơi lơ lửng giữa tank và tạo ra cảnh tượng đẹp."
   },
   {
-    "id": "puffer-fig",
-    "name": "Puffer Fig",
-    "category": "brackish",
+    "id": "ca-noc-sung",
+    "name": "Cá Nóc Sung",
+    "species": "Cá",
+    "waterType": "Nước lợ",
     "price": 350000,
     "stock": 7,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Ca noi tieng, mau vang, co the phu phong khi co cam thay de doa.",
-    "description": "Puffer Fig la dong ca duoi ham, can moi truong nuoc lợ on dinh. Phu hop cho ho ca dang thuc."
+    "shortDescription": "Cá nổi tiếng, màu vàng, có thể phù phích khi có cảm thấy đe dọa.",
+    "description": "Cá Nóc Sung là loài cá dưới hàm, cần môi trường nước lợ ổn định. Phù hợp cho hồ cá đang thực. Nhiệt độ từ 24-28°C, độ mặn thích hợp. Loài này thông minh, hung dữ và có tính cách độc đáo, cần nuôi riêng."
   },
   {
-    "id": "archerfish-spotted",
-    "name": "Archerfish Spotted",
-    "category": "brackish",
+    "id": "ca-ban-nuoc-cham",
+    "name": "Cá Bắn Nước Chấm",
+    "species": "Cá",
+    "waterType": "Nước lợ",
     "price": 280000,
     "stock": 5,
     "image": "../image/ocean-bg.svg",
-    "shortDescription": "Ca ban ca, co the niem nuoc va ban dich su ton ca o bai dat, co tram tim.",
-    "description": "Archerfish Spotted la dong ca thong minh va hang hay. Can ky nang quan ly nuoc lợ va khong gian boi rong."
+    "shortDescription": "Cá bắn cá, có thể niếm nước và bắn dịch để tơn cá ở bài đất, có trăm tim.",
+    "description": "Cá Bắn Nước Chấm là loài cá thông minh và hang hay. Cần kỹ năng quản lý nước lợ và không gian bơi rộng. Nhiệt độ từ 24-28°C. Loài này có thể bắn nước để bắt mồi trên bề mặt, rất thú vị để quan sát."
+  },
+  {
+    "id": "oc-nerite",
+    "name": "Ốc Nerite",
+    "species": "Ốc",
+    "waterType": "Nước ngọt",
+    "price": 35000,
+    "stock": 25,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ốc sạch dọn tảo hiệu quả, hoa tiết bắt mắt.",
+    "description": "Ốc Nerite là sinh vật cảnh tuyệt vời để dọn tảo trong bể. Chúng ăn rong bám trên các bề mặt mà không gây hại cho cây. Nhiệt độ từ 22-26°C, độ pH 7.0-8.0. Loài này rất hữu ích cho hệ thống cân bằng sinh thái bể cá."
+  },
+  {
+    "id": "oc-sat-thu",
+    "name": "Ốc Sát Thủ",
+    "species": "Ốc",
+    "waterType": "Nước ngọt",
+    "price": 45000,
+    "stock": 18,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ốc ăn ốc, giúp kiểm soát ốc Ramshorn.",
+    "description": "Ốc Sát Thủ là loài ốc ăn ốc khác, hữu ích để kiểm soát ốc xấu trong bể. Chúng có hoa tiết cam nâu đẹp mắt. Nhiệt độ từ 22-27°C. Loài này tương đối yên tĩnh và không gây hại cho cây hay cá."
+  },
+  {
+    "id": "oc-mystery",
+    "name": "Ốc Mystery",
+    "species": "Ốc",
+    "waterType": "Nước ngọt",
+    "price": 55000,
+    "stock": 20,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Ốc đẹp, nhiều màu sắc, ăn tảo và xác thức ăn.",
+    "description": "Ốc Mystery là sinh vật cảnh phổ biến, có nhiều màu sắc như vàng, xanh, đen, cam. Ăn tảo và xác thức ăn lơ lửng. Nhiệt độ từ 20-28°C. Loài này thích bơi vào ban đêm và rất lớn chậu."
+  },
+  {
+    "id": "tep-amano",
+    "name": "Tép Amano",
+    "species": "Tép",
+    "waterType": "Nước ngọt",
+    "price": 25000,
+    "stock": 40,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Tép xóa tảo hiệu quả, mạnh mẽ, độc lập.",
+    "description": "Tép Amano là loài tép xóa tảo tuyệt vời nhất. Chúng thích ăn các loại tảo khó loại bỏ bằng tay. Nhiệt độ từ 22-28°C, độ pH 6.5-8.0. Loài này rất hoạt động và có thể sống 2-3 năm."
+  },
+  {
+    "id": "tep-hoa-do",
+    "name": "Tép Hóa Đỏ",
+    "species": "Tép",
+    "waterType": "Nước ngọt",
+    "price": 35000,
+    "stock": 35,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Tép đỏ rực, dễ nhân giống, phù hợp bể cây.",
+    "description": "Tép Hóa Đỏ là loài tép đẹp với màu đỏ rực rỡ, dễ nhân giống và dễ nuôi. Tốt cho hệ thống bộ lọc sinh học. Nhiệt độ từ 22-28°C, độ pH 6.5-8.0. Loài này sẽ tạo ra quần thể nếu bể có đủ thực phẩm."
+  },
+  {
+    "id": "tep-bee",
+    "name": "Tép Bee",
+    "species": "Tép",
+    "waterType": "Nước ngọt",
+    "price": 55000,
+    "stock": 22,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "Tép sọc trắng đen, cao cấp, khó nuôi.",
+    "description": "Tép Bee là loài tép cao cấp với hoa tiết sọc trắng đen giống ong. Khó nuôi hơn các loài tép khác, cần điều kiện nước rất ổn định. Nhiệt độ từ 22-26°C, độ pH 6.2-6.8. Loài này thích bằng cấp ph hơi axit."
+  },
+  {
+    "id": "san-ho-da",
+    "name": "San Hô Đá",
+    "species": "San hô",
+    "waterType": "Nước mặn",
+    "price": 250000,
+    "stock": 12,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "San hô cứng, đẹp, tạo cảnh quan chính hồ.",
+    "description": "San Hô Đá là loài san hô cứng cần ánh sáng LED mạnh và dòng nước tốt. Cần bổ sung calci và các chất lượng. Nhiệt độ từ 24-27°C, độ mặn 1.023-1.025. Loài này rất đẹp nhưng khó nuôi, chỉ cho người có kinh nghiệm."
+  },
+  {
+    "id": "san-ho-mem",
+    "name": "San Hô Mềm",
+    "species": "San hô",
+    "waterType": "Nước mặn",
+    "price": 180000,
+    "stock": 16,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "San hô mềm, dễ nuôi hơn, chuyển động êm.",
+    "description": "San Hô Mềm dễ nuôi hơn san hô cứng, cần ánh sáng LED trung bình. Thích dòng nước mềm. Nhiệt độ từ 24-27°C, độ mặn 1.020-1.025. Loài này rất các họ và di chuyển buổi tối và ban ngày."
+  },
+  {
+    "id": "san-ho-nao",
+    "name": "San Hô Não",
+    "species": "San hô",
+    "waterType": "Nước mặn",
+    "price": 320000,
+    "stock": 8,
+    "image": "../image/ocean-bg.svg",
+    "shortDescription": "San hô não, chứa họa tiết đặc biệt, bền.",
+    "description": "San Hô Não là loài san hô cứng dễ kiếpco, có hoa tiết giống não bộ. Cần ánh sáng LED tốt và dòng nước vừa phải. Nhiệt độ từ 24-27°C, độ mặn 1.023-1.025. Loài này lớn và đắp và chiếm chỗ khá lớn."
   }
 ]

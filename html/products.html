@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>San pham | Aqualife</title>
+  <title>Sản phẩm | Aqualife</title>
   <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/products.css" />
+  <link rel="stylesheet" href="../css/products.css">
   <script defer src="../js/common.js"></script>
   <script defer src="../js/products.js"></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="home.html">Aqualife</a>
-      <nav class="main-nav">
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="auth.html">Login</a>
-      </nav>
-      <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="home.html">Aqualife</a>
+    <nav class="main-nav">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="auth.html">Login</a>
+    </nav>
+    <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Khám phá bộ sưu tập cá cảnh tuyệt đẹp</h1>
+  <p>Nơi hội tụ những kiệt tác sống động từ đại dương</p>
+</section>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Tìm kiếm</h3>
+    <input type="text" id="searchInput" placeholder="Tên loài cá...">
+
+    <h3>Loài</h3>
+    <ul id="speciesFilter">
+      <li data-species="all" class="active">Tất cả</li>
+      <li data-species="Cá">Cá</li>
+      <li data-species="Tép">Tép</li>
+      <li data-species="Ốc">Ốc</li>
+      <li data-species="San hô">San hô</li>
+    </ul>
+
+    <h3>Môi trường</h3>
+    <ul id="environmentFilter">
+      <li data-env="all" class="active">Tất cả</li>
+      <li data-env="Nước ngọt">Nước ngọt</li>
+      <li data-env="Nước mặn">Nước mặn</li>
+      <li data-env="Nước lợ">Nước lợ</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="top-bar">
+      <span id="count">0 sản phẩm</span>
+
+      <select id="sort">
+        <option value="new">Mới nhất</option>
+        <option value="low">Giá thấp</option>
+        <option value="high">Giá cao</option>
+      </select>
     </div>
-  </header>
 
-  <main class="page">
-    <div class="container">
-      <h1>Danh sach san pham</h1>
-      <p class="muted">Bam vao san pham de mo trang chi tiet.</p>
+    <div class="products" id="product-list"></div>
 
-      <div class="tools">
-        <input id="search-input" class="input" type="text" placeholder="Tim theo ten hoac mo ta" />
-        <select id="category-filter" class="select"></select>
-      </div>
+    <div class="pagination" id="pagination"></div>
 
-      <div id="product-grid" class="grid grid-3"></div>
-    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <span>© 2026 Aqualife</span>
-      <a href="index.html">So do trang</a>
-    </div>
-  </footer>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Aqualife</span>
+    <a href="index.html">Sơ đồ trang</a>
+  </div>
+</footer>
+
 </body>
 </html>

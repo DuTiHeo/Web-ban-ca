@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const nameEl = document.getElementById("detail-name");
   const priceEl = document.getElementById("detail-price");
   const categoryEl = document.getElementById("detail-category");
+  const speciesEl = document.getElementById("detail-species");
+  const waterTypeEl = document.getElementById("detail-water-type");
   const descEl = document.getElementById("detail-description");
   const stockEl = document.getElementById("detail-stock");
   const quantityEl = document.getElementById("detail-quantity");
@@ -27,6 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     nameEl.textContent = product.name;
     priceEl.textContent = Aqualife.formatCurrency(product.price);
     categoryEl.textContent = product.category;
+    speciesEl.textContent = product.species || "Chưa có thông tin";
+    waterTypeEl.textContent = product.waterType || "Chưa có thông tin";
     descEl.textContent = product.description;
     stockEl.textContent = String(product.stock);
 
