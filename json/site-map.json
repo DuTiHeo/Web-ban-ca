@@ -2,7 +2,7 @@
   "project": "Aqualife",
   "version": "2.0.0",
   "pages": [
-    { "name": "Trang chu", "file": "html/home.html" },
+    { "name": "", "file": "html/home.html" },
     { "name": "Gioi thieu", "file": "html/about.html" },
     { "name": "San pham", "file": "html/products.html" },
     { "name": "Chi tiet san pham", "file": "html/product-detail.html" },
