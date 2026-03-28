@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const imageEl = document.getElementById("detail-image");
   const nameEl = document.getElementById("detail-name");
   const priceEl = document.getElementById("detail-price");
-  const categoryEl = document.getElementById("detail-category");
   const speciesEl = document.getElementById("detail-species");
   const waterTypeEl = document.getElementById("detail-water-type");
   const descEl = document.getElementById("detail-description");
@@ -11,7 +10,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const addBtn = document.getElementById("detail-add");
   const relatedEl = document.getElementById("related-products");
 
-  if (!imageEl || !nameEl || !priceEl || !descEl || !quantityEl || !addBtn || !relatedEl) return;
+  if (!imageEl || !nameEl || !priceEl || !descEl || !quantityEl || !addBtn || !relatedEl) {
+    return;
+  }
 
   try {
     const products = await Aqualife.loadProducts();
@@ -28,9 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     imageEl.alt = product.name;
     nameEl.textContent = product.name;
     priceEl.textContent = Aqualife.formatCurrency(product.price);
-    categoryEl.textContent = product.category;
-    speciesEl.textContent = product.species || "Chưa có thông tin";
-    waterTypeEl.textContent = product.waterType || "Chưa có thông tin";
+    speciesEl.textContent = product.species || "Chua co thong tin";
+    waterTypeEl.textContent = product.waterType || "Chua co thong tin";
     descEl.textContent = product.description;
     stockEl.textContent = String(product.stock);
 
@@ -40,21 +40,60 @@ document.addEventListener("DOMContentLoaded", async () => {
       quantityEl.value = "1";
     });
 
-    const related = products.filter((item) => item.id !== product.id).slice(0, 3);
-    relatedEl.innerHTML = related
-      .map(
-        (item) => `
-          <article class="card product-card">
-            <a class="product-thumb" href="product-detail.html?id=${item.id}">
-              <img src="${item.image}" alt="${item.name}" />
-            </a>
-            <h4><a href="product-detail.html?id=${item.id}">${item.name}</a></h4>
-            <p class="price">${Aqualife.formatCurrency(item.price)}</p>
-          </article>
-        `,
-      )
-      .join("");
+    const related = laySanPhamLienQuan(products, product).slice(0, 3);
+    relatedEl.innerHTML = related.map(taoCardSanPhamLienQuan).join("");
+
+    relatedEl.addEventListener("click", (event) => {
+      if (event.target.classList.contains("btn-add")) {
+        const idCanThem = event.target.dataset.id;
+        Aqualife.addToCart(idCanThem, 1);
+      }
+    });
   } catch (error) {
     nameEl.textContent = `Co loi: ${error.message}`;
   }
 });
+
+function taoCardSanPhamLienQuan(product) {
+  return `
+    <article class="product-card related-product-card">
+      <a href="product-detail.html?id=${product.id}" class="product-image">
+        <img src="${product.image}" alt="${product.name}" />
+      </a>
+      <div class="product-info">
+        <h3>
+          <a href="product-detail.html?id=${product.id}">
+            ${product.name}
+          </a>
+        </h3>
+        <p class="species">${product.species}</p>
+        <p class="environment">${product.waterType}</p>
+        <p class="description">${product.shortDescription}</p>
+
+        <div class="product-footer">
+          <span class="price">${Aqualife.formatCurrency(product.price)}</span>
+          <button class="btn-add" data-id="${product.id}" type="button">
+            Them vao gio
+          </button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function laySanPhamLienQuan(products, product) {
+  const sanPhamKhac = products.filter((item) => item.id !== product.id);
+  const cungLoai = sanPhamKhac.filter((item) => item.species === product.species);
+  const cungMoiTruong = sanPhamKhac.filter(
+    (item) =>
+      item.species !== product.species &&
+      item.waterType === product.waterType
+  );
+  const conLai = sanPhamKhac.filter(
+    (item) =>
+      item.species !== product.species &&
+      item.waterType !== product.waterType
+  );
+
+  return [...cungLoai, ...cungMoiTruong, ...conLai];
+}
