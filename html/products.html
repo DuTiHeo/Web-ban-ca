@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sản phẩm | Aqualife</title>
   <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/products.css">
+  <link rel="stylesheet" href="../css/products.css" />
   <script defer src="../js/common.js"></script>
   <script defer src="../js/products.js"></script>
 </head>
@@ -27,57 +27,84 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Khám phá bộ sưu tập cá cảnh tuyệt đẹp</h1>
-  <p>Nơi hội tụ những kiệt tác sống động từ đại dương</p>
-</section>
+<main class="page products-page">
+  <div class="container">
+    <section class="hero">
+      <h1>Khám phá bộ sưu tập cá cảnh tuyệt đẹp</h1>
+      <p>Nơi hội tụ những kiệt tác sống động từ đại dương</p>
+    </section>
+  </div>
 
-<div class="container">
+  <div class="container products-layout">
+    <aside class="sidebar">
+      <h3>Tìm kiếm</h3>
+      <input type="text" id="searchInput" placeholder="Tên loài..." />
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <h3>Tìm kiếm</h3>
-    <input type="text" id="searchInput" placeholder="Tên loài cá...">
+      <h3>Loài</h3>
+      <ul id="speciesFilter">
+        <li data-species="all" class="active">
+          <span class="filter-option">Tất cả</span>
+        </li>
+        <li data-species="Cá">
+          <span class="filter-option">
+            <img class="filter-icon" src="../image/icon.img/shoal.png" alt="" />
+            Cá
+          </span>
+        </li>
+        <li data-species="Tép">
+          <span class="filter-option">
+            <img class="filter-icon" src="../image/icon.img/lobster.png" alt="" />
+            Tép
+          </span>
+        </li>
+        <li data-species="Ốc">
+          <span class="filter-option">
+            <img class="filter-icon" src="../image/icon.img/snail.png" alt="" />
+            Ốc
+          </span>
+        </li>
+        <li data-species="San hô">
+          <span class="filter-option">
+            <img class="filter-icon" src="../image/icon.img/coral.png" alt="" />
+            San hô
+          </span>
+        </li>
+      </ul>
 
-    <h3>Loài</h3>
-    <ul id="speciesFilter">
-      <li data-species="all" class="active">Tất cả</li>
-      <li data-species="Cá">Cá</li>
-      <li data-species="Tép">Tép</li>
-      <li data-species="Ốc">Ốc</li>
-      <li data-species="San hô">San hô</li>
-    </ul>
+      <h3>Môi trường</h3>
+      <div id="environmentFilter" class="environment-filter">
+        <label class="checkbox-option">
+          <input type="checkbox" value="Nước ngọt" />
+          <span>Nước ngọt</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" value="Nước mặn" />
+          <span>Nước mặn</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" value="Nước lợ" />
+          <span>Nước lợ</span>
+        </label>
+      </div>
+    </aside>
 
-    <h3>Môi trường</h3>
-    <ul id="environmentFilter">
-      <li data-env="all" class="active">Tất cả</li>
-      <li data-env="Nước ngọt">Nước ngọt</li>
-      <li data-env="Nước mặn">Nước mặn</li>
-      <li data-env="Nước lợ">Nước lợ</li>
-    </ul>
-  </aside>
+    <section class="main">
+      <div class="top-bar">
+        <span id="count">0 sản phẩm</span>
 
-  <!-- MAIN -->
-  <main class="main">
+        <select id="sort">
+          <option value="new">Mới nhất</option>
+          <option value="low">Giá thấp</option>
+          <option value="high">Giá cao</option>
+        </select>
+      </div>
 
-    <div class="top-bar">
-      <span id="count">0 sản phẩm</span>
+      <div class="products" id="product-list"></div>
 
-      <select id="sort">
-        <option value="new">Mới nhất</option>
-        <option value="low">Giá thấp</option>
-        <option value="high">Giá cao</option>
-      </select>
-    </div>
-
-    <div class="products" id="product-list"></div>
-
-    <div class="pagination" id="pagination"></div>
-
-  </main>
-
-</div>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </div>
+</main>
 
 <!-- FOOTER -->
 <footer class="site-footer">

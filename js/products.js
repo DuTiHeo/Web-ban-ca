@@ -1,164 +1,241 @@
-let allProducts = [];
-let filteredProducts = [];
-let currentSort = "new";
-let selectedSpecies = "all";
-let selectedEnvironment = "all";
-let currentPage = 1;
-let perPage = 9;
+// ===================== TRANG THAI (STATE) =====================
+const state = {
+  tatCaSanPham: [],
+  sanPhamDaLoc: [],
+  kieuSapXep: "new",
+  loaiCa: "all",
+  moiTruong: [],
+  trangHienTai: 1,
+  soSanPhamMoiTrang: 9,
+};
 
-document.addEventListener("DOMContentLoaded", async () => {
+// ===================== KHOI TAO =====================
+document.addEventListener("DOMContentLoaded", khoiTao);
+
+async function khoiTao() {
   try {
-    allProducts = await Aqualife.loadProducts();
-    
-    // Setup filters
-    setupSpeciesFilter();
-    setupEnvironmentFilter();
-    setupSearch();
-    setupSort();
-    
-    filterAndRender();
-  } catch (error) {
-    console.error("Lỗi tải sản phẩm:", error);
-    document.getElementById("product-list").innerHTML = '<div style="text-align:center;color:#999;">Không thể tải sản phẩm</div>';
-  }
-});
+    state.tatCaSanPham = await Aqualife.loadProducts();
 
-function setupSpeciesFilter() {
-  const speciesFilters = document.querySelectorAll("#speciesFilter li");
-  speciesFilters.forEach(element => {
-    element.addEventListener("click", () => {
-      speciesFilters.forEach(el => el.classList.remove("active"));
-      element.classList.add("active");
-      selectedSpecies = element.getAttribute("data-species");
-      currentPage = 1;
-      filterAndRender();
+    ganSuKien();
+    capNhatVaRender();
+  } catch (err) {
+    console.error("Lỗi tải sản phẩm:", err);
+    hienThiLoi();
+  }
+}
+
+// ===================== GAN SU KIEN =====================
+function ganSuKien() {
+  ganFilter("#speciesFilter li", "loaiCa", "data-species");
+  ganFilterMoiTruong();
+
+  const input = document.getElementById("searchInput");
+  input?.addEventListener("input", () => {
+    capNhatState({});
+  });
+
+  const sort = document.getElementById("sort");
+  sort?.addEventListener("change", (e) => {
+    capNhatState({ kieuSapXep: e.target.value });
+  });
+
+  const list = document.getElementById("product-list");
+  list?.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-add")) {
+      const id = e.target.dataset.id;
+      Aqualife.addToCart(id, 1);
+    }
+  });
+}
+
+function ganFilter(selector, key, attr) {
+  const elements = document.querySelectorAll(selector);
+
+  elements.forEach((el) => {
+    el.addEventListener("click", () => {
+      elements.forEach((item) => item.classList.remove("active"));
+      el.classList.add("active");
+
+      capNhatState({
+        [key]: el.getAttribute(attr),
+      });
     });
   });
 }
 
-function setupEnvironmentFilter() {
-  const envFilters = document.querySelectorAll("#environmentFilter li");
-  envFilters.forEach(element => {
-    element.addEventListener("click", () => {
-      envFilters.forEach(el => el.classList.remove("active"));
-      element.classList.add("active");
-      selectedEnvironment = element.getAttribute("data-env");
-      currentPage = 1;
-      filterAndRender();
+function ganFilterMoiTruong() {
+  const checkboxes = document.querySelectorAll(
+    "#environmentFilter input[type='checkbox']"
+  );
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const danhSachMoiTruong = Array.from(checkboxes)
+        .filter((item) => item.checked)
+        .map((item) => item.value);
+
+      capNhatState({
+        moiTruong: danhSachMoiTruong,
+      });
     });
   });
 }
 
-function setupSearch() {
-  const searchInput = document.getElementById("searchInput");
-  if (searchInput) {
-    searchInput.addEventListener("input", () => {
-      currentPage = 1;
-      filterAndRender();
-    });
-  }
+// ===================== CAP NHAT STATE =====================
+function capNhatState(newData) {
+  Object.assign(state, newData);
+  state.trangHienTai = 1;
+  capNhatVaRender();
 }
 
-function setupSort() {
-  const sortSelect = document.getElementById("sort");
-  if (sortSelect) {
-    sortSelect.addEventListener("change", (e) => {
-      currentSort = e.target.value;
-      filterAndRender();
-    });
-  }
+// ===================== FLOW CHINH =====================
+function capNhatVaRender() {
+  locSanPham();
+  sapXepSanPham();
+  renderSanPham();
+  renderPhanTrang();
+  capNhatSoLuong();
 }
 
-function filterAndRender() {
-  const searchKeyword = document.getElementById("searchInput")?.value.trim().toLowerCase() || "";
-  
-  // Lọc sản phẩm
-  filteredProducts = allProducts.filter(product => {
-    const matchSpecies = selectedSpecies === "all" || product.species === selectedSpecies;
-    const matchEnvironment = selectedEnvironment === "all" || product.waterType === selectedEnvironment;
-    const matchSearch = product.name.toLowerCase().includes(searchKeyword) || 
-                       product.shortDescription.toLowerCase().includes(searchKeyword);
-    return matchSpecies && matchEnvironment && matchSearch;
+// ===================== LOGIC =====================
+function locSanPham() {
+  const tuKhoa =
+    document.getElementById("searchInput")?.value.trim().toLowerCase() || "";
+
+  state.sanPhamDaLoc = state.tatCaSanPham.filter((sp) => {
+    const dungLoai =
+      state.loaiCa === "all" || sp.species === state.loaiCa;
+
+    const dungMoiTruong =
+      state.moiTruong.length === 0 ||
+      state.moiTruong.includes(sp.waterType);
+
+    const dungTimKiem =
+      sp.name.toLowerCase().includes(tuKhoa) ||
+      sp.shortDescription.toLowerCase().includes(tuKhoa);
+
+    return dungLoai && dungMoiTruong && dungTimKiem;
   });
-
-  // Sắp xếp
-  sortProducts();
-  
-  // Cập nhật số lượng
-  const countEl = document.getElementById("count");
-  if (countEl) {
-    countEl.textContent = `${filteredProducts.length} sản phẩm`;
-  }
-  
-  // Render
-  render();
-  renderPagination();
 }
 
-function sortProducts() {
-  if (currentSort === "low") {
-    filteredProducts.sort((a, b) => a.price - b.price);
-  } else if (currentSort === "high") {
-    filteredProducts.sort((a, b) => b.price - a.price);
+function sapXepSanPham() {
+  if (state.kieuSapXep === "low") {
+    state.sanPhamDaLoc.sort((a, b) => a.price - b.price);
+  } else if (state.kieuSapXep === "high") {
+    state.sanPhamDaLoc.sort((a, b) => b.price - a.price);
   } else {
-    // Sắp xếp theo "new" (thứ tự ban đầu)
-    filteredProducts.sort((a, b) => allProducts.indexOf(a) - allProducts.indexOf(b));
+    state.sanPhamDaLoc.sort(
+      (a, b) =>
+        state.tatCaSanPham.indexOf(a) -
+        state.tatCaSanPham.indexOf(b)
+    );
   }
 }
 
-function render() {
-  const start = (currentPage - 1) * perPage;
-  const show = filteredProducts.slice(start, start + perPage);
-  
-  const listEl = document.getElementById("product-list");
-  if (!listEl) return;
+// ===================== RENDER =====================
+function renderSanPham() {
+  const list = document.getElementById("product-list");
+  if (!list) return;
 
-  if (show.length === 0) {
-    listEl.innerHTML = '<div style="text-align:center;color:#999;grid-column:1/-1;">Không có sản phẩm phù hợp</div>';
+  const batDau = (state.trangHienTai - 1) * state.soSanPhamMoiTrang;
+  const danhSach = state.sanPhamDaLoc.slice(
+    batDau,
+    batDau + state.soSanPhamMoiTrang
+  );
+
+  if (danhSach.length === 0) {
+    list.innerHTML = htmlRong("Không có sản phẩm phù hợp");
     return;
   }
 
-  listEl.innerHTML = show
-    .map((item) => `
-      <div class="product-card">
-        <a href="product-detail.html?id=${item.id}" class="product-image">
-          <img src="${item.image}" alt="${item.name}" />
-        </a>
-        <div class="product-info">
-          <h3><a href="product-detail.html?id=${item.id}">${item.name}</a></h3>
-          <p class="species">${item.species}</p>
-          <p class="environment">${item.waterType}</p>
-          <p class="description">${item.shortDescription}</p>
-          <div class="product-footer">
-            <span class="price">${Aqualife.formatCurrency(item.price)}</span>
-            <button class="btn-add" onclick="Aqualife.addToCart('${item.id}', 1)">Thêm vào giỏ</button>
-          </div>
+  list.innerHTML = danhSach.map(taoCardSanPham).join("");
+}
+
+function taoCardSanPham(sp) {
+  return `
+    <div class="product-card">
+      <a href="product-detail.html?id=${sp.id}" class="product-image">
+        <img src="${sp.image}" alt="${sp.name}" />
+      </a>
+      <div class="product-info">
+        <h3>
+          <a href="product-detail.html?id=${sp.id}">
+            ${sp.name}
+          </a>
+        </h3>
+        <p class="species">${sp.species}</p>
+        <p class="environment">${sp.waterType}</p>
+        <p class="description">${sp.shortDescription}</p>
+
+        <div class="product-footer">
+          <span class="price">
+            ${Aqualife.formatCurrency(sp.price)}
+          </span>
+          <button class="btn-add" data-id="${sp.id}">
+            Thêm vào giỏ
+          </button>
         </div>
       </div>
-    `)
-    .join("");
+    </div>
+  `;
 }
 
-function renderPagination() {
-  const total = Math.ceil(filteredProducts.length / perPage);
-  const paginationEl = document.getElementById("pagination");
-  
-  if (!paginationEl || total <= 1) return;
-  
-  let html = "";
-  for (let i = 1; i <= total; i++) {
-    html += `<button onclick="goPage(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
+// ===================== PHAN TRANG =====================
+function renderPhanTrang() {
+  const el = document.getElementById("pagination");
+  if (!el) return;
+
+  const tongTrang = Math.ceil(
+    state.sanPhamDaLoc.length / state.soSanPhamMoiTrang
+  );
+
+  if (tongTrang <= 1) {
+    el.innerHTML = "";
+    return;
   }
-  
-  paginationEl.innerHTML = html;
+
+  let html = "";
+
+  for (let i = 1; i <= tongTrang; i++) {
+    html += `
+      <button
+        class="${i === state.trangHienTai ? "active" : ""}"
+        data-page="${i}">
+        ${i}
+      </button>
+    `;
+  }
+
+  el.innerHTML = html;
+
+  el.querySelectorAll("button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.trangHienTai = Number(btn.dataset.page);
+      renderSanPham();
+      renderPhanTrang();
+
+      document.querySelector(".main")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
 }
 
-function goPage(p) {
-  currentPage = p;
-  render();
-  renderPagination();
-  
-  // Scroll to top
-  document.querySelector(".main")?.scrollIntoView({ behavior: "smooth" });
+// ===================== KHAC =====================
+function capNhatSoLuong() {
+  const el = document.getElementById("count");
+  if (el) {
+    el.textContent = `${state.sanPhamDaLoc.length} sản phẩm`;
+  }
 }
 
+function htmlRong(text) {
+  return `<div style="text-align:center;color:#999;grid-column:1/-1;">${text}</div>`;
+}
+
+function hienThiLoi() {
+  const list = document.getElementById("product-list");
+  if (list) {
+    list.innerHTML = htmlRong("Không thể tải sản phẩm");
+  }
+}
