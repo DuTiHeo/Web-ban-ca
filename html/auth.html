@@ -18,9 +18,11 @@
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-        <a class="active" href="auth.html">Login</a>
       </nav>
-      <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      <nav>
+        <a class="cart-link" href="auth.html">Login</a>
+        <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
     </div>
   </header>
 
@@ -28,18 +30,18 @@
     <div class="container">
       <section class="card auth-card">
         <div class="auth-head">
-          <h1>Login</h1>
-          <p class="muted">Nhap thong tin de truy cap tai khoan.</p>
+          <h1>Đăng nhập</h1>
+          <p class="muted">Nhập thông tin để truy cập tài khoản.</p>
         </div>
 
         <form id="auth-form" class="grid" style="gap:10px;">
           <input class="input" name="email" type="email" placeholder="Email" />
-          <input class="input" name="password" type="password" placeholder="Mat khau" />
-          <button class="btn btn-primary" type="submit">Dang nhap</button>
+          <input class="input" name="password" type="password" placeholder="Mật khẩu" />
+          <button class="btn btn-primary" type="submit">Đăng nhập</button>
         </form>
 
         <div id="auth-result" class="alert hidden"></div>
-        <p class="muted">Chua co tai khoan? <a href="register.html"><strong>Dang ky</strong></a></p>
+        <p class="muted">Chưa có tài khoản? <a href="register.html"><strong>Đăng ký</strong></a></p>
       </section>
     </div>
   </main>

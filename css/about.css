@@ -228,3 +228,14 @@
   font-size:18px;
   cursor:pointer;
 }
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.nav-login {
+  display: flex;
+  gap: 12px;
+}

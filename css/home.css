@@ -1,40 +1,19 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-  background:#f4f7fb;
-  color:#222;
-}
-
-/* NAVBAR */
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 50px;
-  background:#ffffffcc;
+/* HEADER */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #ffffffcc;
   backdrop-filter: blur(10px);
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
+  gap: 16px;
 }
 
-nav h2{
-  color:#0a6cff;
-  font-weight:700;
-}
-
-nav ul{
-  display:flex;
-  gap:30px;
-  list-style:none;
-}
-
-nav ul li:hover{
-  color:#0a6cff;
+.header-row .brand {
+  color: #0a6cff;
+  font-weight: 700;
 }
 
 /* HERO */
@@ -47,7 +26,7 @@ nav ul li:hover{
   color:#fff;
   display:flex;
   align-items:center;
-  padding:80px;
+  padding: 80px;
 }
 
 .hero h1{
@@ -418,13 +397,5 @@ nav ul li:hover{
   margin-top:40px;
   font-size:13px;
   opacity:0.6;
-}
-nav ul li a{
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-nav ul li a:hover{
-  color:#0a6cff;
 }
 

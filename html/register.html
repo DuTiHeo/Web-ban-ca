@@ -18,9 +18,11 @@
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-        <a class="active" href="register.html">Register</a>
       </nav>
-      <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      <nav>
+        <a class="cart-link" href="register.html">Register</a>
+        <a class="cart-link" href="cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
     </div>
   </header>
 
@@ -28,20 +30,20 @@
     <div class="container">
       <section class="card auth-card">
         <div class="auth-head">
-          <h1>Tao tai khoan moi</h1>
-          <p class="muted">Dang ky de quan ly don hang va lich su mua sam.</p>
+          <h1>Tạo tài khoản mới</h1>
+          <p class="muted">Đăng ký để quản lý đơn hàng và lịch sử mua sắm.</p>
         </div>
 
         <form id="register-form" class="grid" style="gap:10px;">
-          <input class="input" name="name" type="text" placeholder="Ho va ten" />
+          <input class="input" name="name" type="text" placeholder="Họ và tên" />
           <input class="input" name="email" type="email" placeholder="Email" />
-          <input class="input" name="password" type="password" placeholder="Mat khau" />
-          <input class="input" name="confirm" type="password" placeholder="Nhap lai mat khau" />
-          <button class="btn btn-primary" type="submit">Dang ky</button>
+          <input class="input" name="password" type="password" placeholder="Mật khẩu" />
+          <input class="input" name="confirm" type="password" placeholder="Nhập lại mật khẩu" />
+          <button class="btn btn-primary" type="submit">Đăng ký</button>
         </form>
 
         <div id="register-result" class="alert hidden"></div>
-        <p class="muted">Da co tai khoan? <a href="auth.html"><strong>Dang nhap</strong></a></p>
+        <p class="muted">Đã có tài khoản? <a href="auth.html"><strong>Đăng nhập</strong></a></p>
       </section>
     </div>
   </main>
