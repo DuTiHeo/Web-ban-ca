@@ -13,20 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!name || !email || !message) {
       result.className = "alert alert-error";
-      result.textContent = "Vui long dien day du thong tin.";
+      result.textContent = "Vui lòng điền đầy đủ thông tin.";
       result.classList.remove("hidden");
       return;
     }
 
     if (!/^\S+@\S+\.\S+$/.test(email)) {
       result.className = "alert alert-error";
-      result.textContent = "Email khong hop le.";
+      result.textContent = "Email không hợp lệ.";
       result.classList.remove("hidden");
       return;
     }
 
     result.className = "alert alert-success";
-    result.textContent = "Da gui lien he thanh cong. Chung toi se phan hoi som.";
+    result.textContent = "Đã gửi liên hệ thành công. Chúng tôi sẽ phản hồi sớm.";
     result.classList.remove("hidden");
     form.reset();
   });
