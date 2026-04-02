@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const speciesEl = document.getElementById("detail-species");
   const waterTypeEl = document.getElementById("detail-water-type");
   const descEl = document.getElementById("detail-description");
-  const stockEl = document.getElementById("detail-stock");
   const quantityEl = document.getElementById("detail-quantity");
   const addBtn = document.getElementById("detail-add");
   const relatedEl = document.getElementById("related-products");
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     speciesEl.textContent = product.species || "Chua co thong tin";
     waterTypeEl.textContent = product.waterType || "Chua co thong tin";
     descEl.textContent = product.description;
-    stockEl.textContent = String(product.stock);
 
     addBtn.addEventListener("click", () => {
       const qty = Math.max(1, Number(quantityEl.value || 1));
@@ -85,14 +83,10 @@ function laySanPhamLienQuan(products, product) {
   const sanPhamKhac = products.filter((item) => item.id !== product.id);
   const cungLoai = sanPhamKhac.filter((item) => item.species === product.species);
   const cungMoiTruong = sanPhamKhac.filter(
-    (item) =>
-      item.species !== product.species &&
-      item.waterType === product.waterType
+    (item) => item.species !== product.species && item.waterType === product.waterType
   );
   const conLai = sanPhamKhac.filter(
-    (item) =>
-      item.species !== product.species &&
-      item.waterType !== product.waterType
+    (item) => item.species !== product.species && item.waterType !== product.waterType
   );
 
   return [...cungLoai, ...cungMoiTruong, ...conLai];

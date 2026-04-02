@@ -19,8 +19,7 @@
 /* HERO */
 .hero{
   height:600px;
-  background:linear-gradient(120deg, rgba(0,102,255,0.7), rgba(0,200,255,0.3)),
-  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-image: url('../image/nen.home.jpg');
   background-size:cover;
   background-position:center;
   color:#fff;
