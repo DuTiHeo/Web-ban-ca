@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const count = Object.keys(Aqualife.getCart()).length;
         if (count) {
           showModal("Xác nhận thanh toán?", () => {
-            showModal("Đã tiếp nhận đơn hàng (demo).", () => {}, false);
+            window.location.href = "pay.html";
           }, true);
         } else {
           showModal("Giỏ hàng đang rỗng.", () => {}, false);
