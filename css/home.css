@@ -21,14 +21,14 @@
   border:none;
   border-radius:8px;
   background:#fff;
-  color:#0a6cff;
+  color:#0b6aa2;
   font-weight:600;
   cursor:pointer;
   transition:0.3s;
 }
 
 .hero button:hover{
-  background:#0a6cff;
+  background:#0b6aa2;
   color:#fff;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .product p{
-  color:#0a6cff;
+  color:#0b6aa2;
   font-weight:600;
 }
 
@@ -109,7 +109,7 @@
   margin-top:10px;
   padding:10px;
   width:100%;
-  background:linear-gradient(135deg,#0a6cff,#00c6ff);
+  background:linear-gradient(135deg,#0b6aa2,#00c6ff);
   color:#fff;
   border:none;
   border-radius:8px;
@@ -232,7 +232,7 @@
 .testimonial .tag{
   font-size:12px;
   letter-spacing:2px;
-  color:#0a6cff;
+  color:#0b6aa2;
   margin-bottom:10px;
 }
 
@@ -270,7 +270,7 @@
 /* RIGHT CARD (HIGHLIGHT) */
 .testimonial-right{
   flex:1;
-  background:linear-gradient(135deg,#0a6cff,#00c6ff);
+  background:linear-gradient(135deg,#0b6aa2,#00c6ff);
   color:#fff;
   padding:30px;
   border-radius:15px;
@@ -346,7 +346,7 @@
 
 .footer-col p:hover,
 .footer-col a:hover{
-  color:#0a6cff;
+  color:#0b6aa2;
 }
 
 /* SOCIAL */
@@ -359,7 +359,7 @@
 }
 
 .social a:hover{
-  color:#0a6cff;
+  color:#0b6aa2;
 }
 
 /* NEWSLETTER */
@@ -378,7 +378,7 @@
 .newsletter button{
   padding:10px 15px;
   border:none;
-  background:#0a6cff;
+  background:#0b6aa2;
   color:#fff;
   cursor:pointer;
 }

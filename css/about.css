@@ -36,13 +36,28 @@
 .feature-box .icon{
   width:40px;
   height:40px;
-  background:#0a6cff;
+  background:#0b6aa2;
   color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
   border-radius:10px;
   margin-bottom:10px;
+}
+
+.icon.blue{
+  background:#dbeafe;
+  color:#2563eb;
+}
+
+.icon.brown{
+  background:#f3e8ff;
+  color:#7c3aed;
+}
+
+.icon.light{
+  background:#e0f2fe;
+  color:#0284c7;
 }
 
 .feature-box h3{
@@ -87,7 +102,7 @@
 }
 
 .timeline-content span{
-  color:#0a6cff;
+  color:#0b6aa2;
 }
 
 /* ITEM */
@@ -210,7 +225,7 @@
 /* BACK */
 .card-back{
   transform:rotateY(180deg);
-  background:linear-gradient(135deg,#0a6cff,#00c6ff);
+  background:linear-gradient(135deg,#0b6aa2,#00c6ff);
   color:#fff;
   text-align:center;
 }

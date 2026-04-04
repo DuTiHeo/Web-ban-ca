@@ -75,7 +75,7 @@
 }
 
 .product-info a {
-  color: #0a6cff;
+  color: #0b6aa2;
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@
 
 .species {
   background: #e8f1ff;
-  color: #0a6cff;
+  color: #0b6aa2;
   padding: 4px 8px;
   border-radius: 4px;
   display: inline-block;
@@ -126,12 +126,12 @@
 .price {
   font-size: 18px;
   font-weight: bold;
-  color: #0a6cff;
+  color: #0b6aa2;
 }
 
 .btn-add {
   padding: 8px 12px;
-  background: #0a6cff;
+  background: #0b6aa2;
   color: #fff;
   border: none;
   border-radius: 5px;

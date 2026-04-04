@@ -78,7 +78,7 @@ function renderCart(products) {
           </div>
           <div>
             <h3><a href="product-detail.html?id=${id}">${product.name}</a></h3>
-            <p class="muted">${product.category}</p>
+            <p class="muted">${product.shortDescription}</p>
             <p class="price">${Aqualife.formatCurrency(product.price)}</p>
 
           </div>
