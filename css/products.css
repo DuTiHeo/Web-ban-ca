@@ -5,7 +5,7 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #0a6cff, #00c6ff);
+  background: linear-gradient(135deg, #0b6aa2, #00c6ff);
   color: #fff;
   text-align: center;
   padding: 60px;
@@ -56,7 +56,7 @@
 }
 
 .sidebar input[type="text"]:focus {
-  border-color: #0a6cff;
+  border-color: #0b6aa2;
   box-shadow: 0 0 0 3px rgba(10, 108, 255, 0.12);
 }
 
@@ -99,7 +99,7 @@
 }
 
 .sidebar li.active {
-  background: #0a6cff;
+  background: #0b6aa2;
   color: #fff;
 }
 
@@ -122,14 +122,14 @@
 
 .checkbox-option:hover {
   background: #f8fbff;
-  border-color: #0a6cff;
+  border-color: #0b6aa2;
 }
 
 .checkbox-option input[type="checkbox"] {
   width: 16px;
   height: 16px;
   margin: 0;
-  accent-color: #0a6cff;
+  accent-color: #0b6aa2;
 }
 
 .checkbox-option span {
@@ -203,7 +203,7 @@
 }
 
 .product-info a {
-  color: #0a6cff;
+  color: #0b6aa2;
   text-decoration: none;
 }
 
@@ -219,7 +219,7 @@
 
 .species {
   background: #e8f1ff;
-  color: #0a6cff;
+  color: #0b6aa2;
   padding: 4px 8px;
   border-radius: 4px;
   display: inline-block;
@@ -253,12 +253,12 @@
 .price {
   font-size: 18px;
   font-weight: bold;
-  color: #0a6cff;
+  color: #0b6aa2;
 }
 
 .btn-add {
   padding: 8px 12px;
-  background: #0a6cff;
+  background: #0b6aa2;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -286,15 +286,15 @@
 }
 
 .pagination button.active {
-  background: #0a6cff;
+  background: #0b6aa2;
   color: #fff;
-  border-color: #0a6cff;
+  border-color: #0b6aa2;
 }
 
 .pagination button:hover {
-  background: #0a6cff;
+  background: #0b6aa2;
   color: #fff;
-  border-color: #0a6cff;
+  border-color: #0b6aa2;
 }
 
 @media (max-width: 1024px) {
