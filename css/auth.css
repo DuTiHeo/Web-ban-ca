@@ -67,3 +67,34 @@
   border-color: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 1); /* Text trắng rõ hơn khi focus */
 }
+/* Video Background Styles */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Ensure header and footer are visible over video */
+.auth-page .site-header {
+  position: relative;
+  z-index: 10;
+}
+
+.auth-page .site-footer {
+  position: relative;
+  z-index: 10;
+}

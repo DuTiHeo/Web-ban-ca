@@ -13,27 +13,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!name || !email || !password || !confirm) {
       result.className = "alert alert-error";
-      result.textContent = "Vui long dien day du thong tin.";
+      result.textContent = "Vui lòng nhập đầy đủ thông tin.";
       result.classList.remove("hidden");
       return;
     }
 
     if (password.length < 6) {
       result.className = "alert alert-error";
-      result.textContent = "Mat khau can toi thieu 6 ky tu.";
+      result.textContent = "Mật khẩu cần ít nhất 6 ký tự.";
       result.classList.remove("hidden");
       return;
     }
 
     if (password !== confirm) {
       result.className = "alert alert-error";
-      result.textContent = "Xac nhan mat khau khong khop.";
+      result.textContent = "Xác nhận mật khẩu không khớp.";
       result.classList.remove("hidden");
       return;
     }
 
     result.className = "alert alert-success";
-    result.textContent = "Dang ky thanh cong. Ban co the dang nhap ngay.";
+    result.textContent = "Đăng ký thành công. Bạn có thể đăng nhập ngay.";
     result.classList.remove("hidden");
     form.reset();
   });

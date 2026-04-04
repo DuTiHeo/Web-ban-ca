@@ -140,6 +140,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     setTimeout(() => {
       window.location.href = "home.html";
-    }, 1500);
+    }, 3000);
   }
 });

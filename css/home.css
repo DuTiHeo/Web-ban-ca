@@ -334,21 +334,32 @@
   letter-spacing:1px;
 }
 
-.footer-col p{
+.footer-col p,
+.footer-col a{
+  display:block;
   margin-bottom:8px;
   font-size:14px;
+  color:#d1d5db;
+  text-decoration:none;
   cursor:pointer;
 }
 
-.footer-col p:hover{
+.footer-col p:hover,
+.footer-col a:hover{
   color:#0a6cff;
 }
 
 /* SOCIAL */
-.social span{
+.social a{
   margin-right:10px;
-  font-size:20px;
+  font-size:14px;
+  color:#d1d5db;
+  text-decoration:none;
   cursor:pointer;
+}
+
+.social a:hover{
+  color:#0a6cff;
 }
 
 /* NEWSLETTER */

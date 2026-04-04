@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!email || !password) {
       result.className = "alert alert-error";
-      result.textContent = "Vui long nhap email va mat khau.";
+      result.textContent = "Vui lòng nhập email và mật khẩu.";
       result.classList.remove("hidden");
       return;
     }
 
     localStorage.setItem("aqualife_user", email);
     result.className = "alert alert-success";
-    result.textContent = "Dang nhap thanh cong. Dang chuyen ve trang chu...";
+    result.textContent = "Đăng nhập thành công! Chuyển hướng đến trang chủ...";
     result.classList.remove("hidden");
 
     setTimeout(() => {
