@@ -1,13 +1,13 @@
 [
   {
     "id": "ca-oranda-mini",
-    "name": "Cá Oranda Mini",
+    "name": "Cá Vàng Đầu Lân",
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 30000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-vang-dau-lan.jpg",
     "shortDescription": "Cá vàng đầu lân nhỏ, dễ thương.",
-    "description": "Cá Oranda Mini là giống cá vàng có phần đầu u đặc trưng, thân tròn và bơi chậm. Phù hợp với bể nhỏ và người mới chơi. Nhiệt độ thích hợp từ 18-24°C."
+    "description": "Cá Vàng Đầu Lân là giống cá vàng có phần đầu u đặc trưng, thân tròn và bơi chậm. Phù hợp với bể nhỏ và người mới chơi. Nhiệt độ thích hợp từ 18-24°C."
   },
   {
     "id": "ca-piranha",
@@ -15,39 +15,39 @@
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 90000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-piranha.jpg",
     "shortDescription": "Cá săn mồi với hàm răng sắc bén.",
     "description": "Cá Piranha là loài cá săn mồi nổi tiếng với hàm răng sắc và tập tính ăn thịt. Cần nuôi trong bể riêng và chăm sóc cẩn thận."
   },
   {
     "id": "ca-chuot-sua-vay-cao",
-    "name": "Cá Chuột Sữa Vây Cao",
+    "name": "Cá Chuột Lùn",
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 25000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Cá tầng đáy, giúp làm sạch bể.",
-    "description": "Cá Chuột Sữa Vây Cao là loài cá sống tầng đáy, hiền lành và giúp dọn thức ăn thừa. Nên nuôi theo đàn để phát triển tốt."
+    "image": "../image/products.img/fish.img/ca-chuot-lun.jpg",
+    "shortDescription": "Cá tầng đáy nhỏ, hiền và dễ nuôi.",
+    "description": "Cá Chuột Lùn là loài cá sống tầng đáy, tính hiền và thường được nuôi theo đàn trong bể thủy sinh. Loài này giúp dọn thức ăn thừa và phù hợp với bể cộng đồng."
   },
   {
     "id": "ca-chuot-cafe-vay-dai",
-    "name": "Cá Chuột Cafe Vây Dài",
+    "name": "Cá Chuột",
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 20000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Màu nâu cafe, vây dài đẹp.",
-    "description": "Cá Chuột Cafe Vây Dài có màu sắc độc đáo và vây dài mềm mại. Giúp làm sạch đáy bể và rất dễ nuôi."
+    "image": "../image/products.img/fish.img/ca-chuot.jpg",
+    "shortDescription": "Cá dọn đáy quen thuộc, bơi linh hoạt.",
+    "description": "Cá Chuột là loài cá tầng đáy phổ biến, hoạt động linh hoạt và giúp dọn thức ăn thừa trong bể. Phù hợp với bể thủy sinh cộng đồng và khá dễ chăm sóc."
   },
   {
     "id": "ca-longfin-gold",
-    "name": "Cá Longfin Gold",
+    "name": "Cá Longfin Vàng",
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 120000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Cá dọn bể màu vàng, vây dài.",
-    "description": "Cá Longfin Gold có màu vàng nổi bật cùng bộ vây dài đẹp mắt. Thường được nuôi để làm sạch bể và tăng tính thẩm mỹ."
+    "image": "../image/products.img/fish.img/ca-longfin-vang.jpg",
+    "shortDescription": "Cá màu vàng nổi bật, vây dài đẹp.",
+    "description": "Cá Longfin Vàng có màu vàng bắt mắt cùng bộ vây dài mềm mại. Loài này thường được nuôi để tăng tính thẩm mỹ và hỗ trợ giữ bể sạch hơn."
   },
   {
     "id": "ca-blue-mahseer",
@@ -55,7 +55,7 @@
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 300000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-blue-mahseer.jpg",
     "shortDescription": "Cá lớn, màu xanh ánh kim.",
     "description": "Cá Blue Mahseer là loài cá kích thước lớn, có màu xanh ánh kim đẹp. Cần bể rộng và hệ thống lọc tốt."
   },
@@ -65,7 +65,7 @@
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 100000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-muong-hoa.webp",
     "shortDescription": "Cá suối thân dài, màu sắc đẹp.",
     "description": "Cá Mương Hoa có thân dài và màu sắc nổi bật, thường sống ở môi trường nước chảy. Cần nước sạch và oxy cao."
   },
@@ -75,19 +75,19 @@
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 50000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-chach-botia.jpg",
     "shortDescription": "Ăn ốc, làm sạch bể hiệu quả.",
     "description": "Cá Chạch Botia là loài cá hoạt động về đêm, chuyên ăn ốc và giúp kiểm soát sinh vật gây hại trong bể."
   },
   {
     "id": "ca-than-tien-ba-mau",
-    "name": "Cá Thần Tiên Ba Màu",
+    "name": "Cá Thần Tiên 3 Màu",
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 15000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-than-tien-3-mau.jpg",
     "shortDescription": "Cá thần tiên với 3 màu nổi bật.",
-    "description": "Cá Thần Tiên Ba Màu có thân dẹt, vây dài và màu sắc hài hòa. Phù hợp với bể thủy sinh lớn."
+    "description": "Cá Thần Tiên 3 Màu có thân dẹt, vây dài và màu sắc hài hòa. Phù hợp với bể thủy sinh lớn và môi trường nước ổn định."
   },
   {
     "id": "ca-kim-son-thai",
@@ -95,19 +95,19 @@
     "species": "Cá",
     "waterType": "Nước ngọt",
     "price": 40000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-kim-son-thai.jpg",
     "shortDescription": "Cá giúp làm sạch hồ hiệu quả.",
     "description": "Cá Kim Sơn Thái thường được nuôi để làm sạch rêu và chất bẩn trong bể. Dễ nuôi và thích nghi tốt."
   },
   {
     "id": "tep-loan-lanh-twb",
-    "name": "Tép Loạn Lanh",
+    "name": "Tép Su La",
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 40000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Tép cảnh nhiều màu sắc độc đáo.",
-    "description": "Tép Loạn Lanh TWB là dòng tép cảnh cao cấp với màu sắc đa dạng và hoa văn độc đáo. Phù hợp với bể thủy sinh và người chơi có kinh nghiệm."
+    "image": "../image/products.img/shirmp.img/tep-su-la.jpg",
+    "shortDescription": "Tép cảnh hiếm, màu sắc nổi bật.",
+    "description": "Tép Su La là dòng tép cảnh cao cấp nổi bật với màu sắc tương phản đẹp mắt và giá trị sưu tầm cao. Phù hợp với người chơi có kinh nghiệm và môi trường nước ổn định."
   },
   {
     "id": "tep-ong-do-prl",
@@ -115,7 +115,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 20000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-ong-do.jpg",
     "shortDescription": "Tép đỏ trắng nổi bật.",
     "description": "Tép Ong Đỏ PRL có màu đỏ trắng đặc trưng, rất được ưa chuộng trong bể thủy sinh. Cần môi trường nước ổn định."
   },
@@ -125,7 +125,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 10000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-vang-thai.jpg",
     "shortDescription": "Tép màu vàng sáng nổi bật.",
     "description": "Tép Vàng Thái có màu vàng rực rỡ, dễ nuôi và thích hợp với nhiều loại bể thủy sinh."
   },
@@ -135,7 +135,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 15000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-vang-dai.jpg",
     "shortDescription": "Tép vàng thân dài, đẹp.",
     "description": "Tép Vàng Đài có thân hình thon dài và màu vàng đặc trưng. Dễ nuôi, phù hợp người mới."
   },
@@ -145,7 +145,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 15000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-socola.jpg",
     "shortDescription": "Tép màu nâu socola lạ mắt.",
     "description": "Tép Socola có màu nâu đậm độc đáo, giúp bể thủy sinh thêm đa dạng màu sắc."
   },
@@ -155,7 +155,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 15000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-blue-dream.webp",
     "shortDescription": "Tép xanh dương nổi bật.",
     "description": "Tép Blue Dream có màu xanh dương đậm đẹp mắt, rất được ưa chuộng trong bể thủy sinh."
   },
@@ -165,7 +165,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 10000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-fire-red.webp",
     "shortDescription": "Tép đỏ đậm nổi bật.",
     "description": "Tép Fire Red là dòng tép đỏ phổ biến, dễ nuôi và phù hợp với người mới chơi thủy sinh."
   },
@@ -175,7 +175,7 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 6000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tép-rili-đỏ.jpg",
     "shortDescription": "Tép đỏ trong suốt độc đáo.",
     "description": "Tép Rili Đỏ có phần thân trong suốt xen kẽ màu đỏ, tạo hiệu ứng rất đẹp trong bể."
   },
@@ -185,39 +185,29 @@
     "species": "Tép",
     "waterType": "Nước ngọt",
     "price": 8000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-src.jpg",
     "shortDescription": "Tép đỏ cherry cao cấp.",
     "description": "Tép SRC (Super Red Cherry) là dòng tép đỏ đẹp, dễ nuôi và thích hợp cho bể thủy sinh."
   },
   {
-    "id": "tep-loan-mau",
-    "name": "Tép Loạn Màu",
-    "species": "Tép",
-    "waterType": "Nước ngọt",
-    "price": 3000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Tép nhiều màu giá rẻ.",
-    "description": "Tép Loạn Màu gồm nhiều màu sắc khác nhau, phù hợp cho người mới bắt đầu chơi tép cảnh."
-  },
-  {
     "id": "tep-ve-sinh-skunk",
-    "name": "Tép Vệ Sinh Skunk",
+    "name": "Tôm Bác Sĩ",
     "species": "Tép",
     "waterType": "Nước mặn",
     "price": 250000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Tép vệ sinh cá, sọc trắng đỏ nổi bật.",
-    "description": "Tép Skunk Cleaner là loài tép nước mặn nổi tiếng với khả năng làm sạch ký sinh trên cá. Có màu đỏ với sọc trắng đặc trưng. Cần môi trường nước ổn định và bể reef."
+    "image": "../image/products.img/shirmp.img/tom-bac-si.jpg",
+    "shortDescription": "Tôm vệ sinh cá, sọc trắng đỏ nổi bật.",
+    "description": "Tôm Bác Sĩ là loài giáp xác nước mặn nổi tiếng với khả năng làm sạch ký sinh trên cá. Có màu đỏ với sọc trắng đặc trưng, phù hợp với bể reef ổn định và môi trường nước chất lượng tốt."
   },
   {
-    "id": "tep-peppermint",
-    "name": "Tép Peppermint",
+    "id": "tep-mui-do",
+    "name": "Tép Mũi Đỏ",
     "species": "Tép",
     "waterType": "Nước mặn",
     "price": 180000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Tép sọc đỏ, ăn aiptasia.",
-    "description": "Tép Peppermint có màu trong suốt với sọc đỏ, thường được nuôi để kiểm soát aiptasia trong bể san hô."
+    "image": "../image/products.img/shirmp.img/tep-mui-do.webp",
+    "shortDescription": "Tép mũi đỏ nổi bật, dáng thanh.",
+    "description": "Tép Mũi Đỏ nổi bật với phần mũi đỏ đặc trưng và thân trong nhẹ. Phù hợp cho bể nước mặn có môi trường ổn định và giàu oxy."
   },
   {
     "id": "tep-blood-red",
@@ -225,7 +215,7 @@
     "species": "Tép",
     "waterType": "Nước mặn",
     "price": 300000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-coral-banded.jpeg",
     "shortDescription": "Tép đỏ đậm, màu cực đẹp.",
     "description": "Tép Blood Red có màu đỏ rực nổi bật, thường sống trong các hang đá và hoạt động về đêm."
   },
@@ -235,7 +225,7 @@
     "species": "Tép",
     "waterType": "Nước mặn",
     "price": 200000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-amano.webp",
     "shortDescription": "Tép sọc trắng đỏ, càng dài.",
     "description": "Tép Coral Banded có càng dài và màu sắc nổi bật. Có thể hơi hung dữ với các tép khác nên cần nuôi riêng."
   },
@@ -245,7 +235,7 @@
     "species": "Tép",
     "waterType": "Nước lợ",
     "price": 30000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-amano.webp",
     "shortDescription": "Tép ăn rêu cực tốt.",
     "description": "Tép Amano sống chủ yếu nước ngọt nhưng sinh sản cần môi trường nước lợ. Rất nổi tiếng trong việc ăn rêu trong bể thủy sinh."
   },
@@ -255,7 +245,7 @@
     "species": "Tép",
     "waterType": "Nước lợ",
     "price": 5000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/shirmp.img/tep-ma.jpg",
     "shortDescription": "Tép trong suốt, dễ nuôi.",
     "description": "Tép Ma có thân trong suốt, dễ nuôi và thích nghi tốt với môi trường nước lợ hoặc nước ngọt nhẹ."
   },
@@ -265,7 +255,7 @@
     "species": "Ốc",
     "waterType": "Nước ngọt",
     "price": 15000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-nerita.webp",
     "shortDescription": "Ốc ăn rêu cực tốt, không sinh sản trong nước ngọt.",
     "description": "Ốc Nerita là loài ốc phổ biến trong bể thủy sinh, chuyên ăn rêu hại. Không sinh sản trong nước ngọt nên dễ kiểm soát số lượng."
   },
@@ -275,7 +265,7 @@
     "species": "Ốc",
     "waterType": "Nước ngọt",
     "price": 10000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-tao.webp",
     "shortDescription": "Ốc lớn, màu sắc đa dạng.",
     "description": "Ốc Táo có kích thước lớn, dễ nuôi và có nhiều màu sắc như vàng, xanh, tím. Có thể ăn cây thủy sinh mềm."
   },
@@ -285,7 +275,7 @@
     "species": "Ốc",
     "waterType": "Nước ngọt",
     "price": 5000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-ramshorn.webp",
     "shortDescription": "Ốc nhỏ, vỏ xoắn đẹp.",
     "description": "Ốc Ramshorn có vỏ xoắn hình sừng cừu, giúp dọn thức ăn thừa trong bể."
   },
@@ -295,7 +285,7 @@
     "species": "Ốc",
     "waterType": "Nước ngọt",
     "price": 3000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-malaysia.png",
     "shortDescription": "Ốc đào nền, giúp thông thoáng đáy.",
     "description": "Ốc Malaysia sống trong nền, giúp làm tơi nền và hạn chế khí độc trong bể thủy sinh."
   },
@@ -305,7 +295,7 @@
     "species": "Ốc",
     "waterType": "Nước lợ",
     "price": 20000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-nerita-gai.jpg",
     "shortDescription": "Ốc trung gian, sống được nước lợ.",
     "description": "Ốc Nerite có thể thích nghi môi trường nước lợ và thường sinh sản trong điều kiện này."
   },
@@ -315,7 +305,7 @@
     "species": "Ốc",
     "waterType": "Nước mặn",
     "price": 80000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-mat-trang.webp",
     "shortDescription": "Ốc biển, vỏ tròn đẹp.",
     "description": "Ốc Mặt Trăng là loài ốc biển có vỏ tròn nhẵn, thường sống trong cát và giúp làm sạch nền."
   },
@@ -325,7 +315,7 @@
     "species": "Ốc",
     "waterType": "Nước mặn",
     "price": 60000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-turbo.JPG",
     "shortDescription": "Ốc ăn rêu mạnh trong bể san hô.",
     "description": "Ốc Turbo là loài ốc biển phổ biến trong bể reef, giúp loại bỏ rêu tảo hiệu quả."
   },
@@ -335,7 +325,7 @@
     "species": "Ốc",
     "waterType": "Nước mặn",
     "price": 50000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/snail.img/oc-trochus.jpg",
     "shortDescription": "Ốc leo kính, dọn rêu tốt.",
     "description": "Ốc Trochus có khả năng bám kính và đá để ăn rêu, rất hữu ích trong bể san hô."
   },
@@ -495,19 +485,19 @@
     "species": "Cá",
     "waterType": "Nước mặn",
     "price": 250000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-nemo.jpg",
     "shortDescription": "Cá nổi tiếng, màu cam trắng.",
     "description": "Cá Nemo là loài cá biển phổ biến, sống cộng sinh với hải quỳ. Dễ nuôi và phù hợp cho người mới chơi bể nước mặn."
   },
   {
-    "id": "ca-dua-xanh",
-    "name": "Cá Dứa Xanh",
+    "id": "ca-bong-hiep-si",
+    "name": "Cá Bống Hiệp Sĩ",
     "species": "Cá",
     "waterType": "Nước lợ",
-    "price": 120000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Cá phát sáng trong bóng tối.",
-    "description": "Cá Dứa Xanh có khả năng phát sáng nhẹ trong điều kiện thiếu sáng. Sống tốt trong môi trường nước lợ."
+    "price": 85000,
+    "image": "../image/products.img/fish.img/ca-bong-hiep-si.jpg",
+    "shortDescription": "Cá bống nhỏ, hoa văn ấn tượng.",
+    "description": "Cá bống hiệp sĩ là loài cá tầng đáy có hoa văn bắt mắt và tính cách khá linh hoạt. Phù hợp với bể nước lợ có nền cát và nhiều chỗ ẩn nấp."
   },
   {
     "id": "ca-thia-xanh",
@@ -515,7 +505,7 @@
     "species": "Cá",
     "waterType": "Nước mặn",
     "price": 80000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-thia-xanh.jpg",
     "shortDescription": "Cá nhỏ, màu xanh dương nổi bật.",
     "description": "Cá Thia Xanh là loài cá biển khỏe, dễ nuôi, phù hợp cho người mới bắt đầu chơi bể reef."
   },
@@ -525,48 +515,58 @@
     "species": "Cá",
     "waterType": "Nước mặn",
     "price": 500000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-hoang-de.jpg",
     "shortDescription": "Cá màu sắc rực rỡ, cao cấp.",
     "description": "Cá Hoàng Đế là loài cá biển có màu sắc rất đẹp, cần bể lớn và môi trường ổn định."
   },
   {
     "id": "ca-butterfly",
-    "name": "Cá Bướm (Butterflyfish)",
+    "name": "Cá Bướm",
     "species": "Cá",
     "waterType": "Nước mặn",
     "price": 350000,
-    "image": "../image/ocean-bg.svg",
+    "image": "../image/products.img/fish.img/ca-buom.webp",
     "shortDescription": "Cá thân dẹt, màu sắc đẹp.",
-    "description": "Cá Bướm có thân mỏng, màu sắc đa dạng. Thích hợp cho bể biển lớn và cần chăm sóc kỹ."
+    "description": "Cá Bướm là loài cá biển có thân mỏng, màu sắc đa dạng và dáng bơi thanh thoát. Phù hợp với bể biển lớn và cần được chăm sóc kỹ."
   },
   {
-    "id": "ca-bong-mat",
-    "name": "Cá Bống Mắt",
+    "id": "ca-map-colombia",
+    "name": "Cá Mập Colombia",
     "species": "Cá",
     "waterType": "Nước lợ",
-    "price": 70000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Cá nhỏ, sống đáy.",
-    "description": "Cá Bống Mắt sống ở tầng đáy, thích môi trường nước lợ và nền cát."
+    "price": 180000,
+    "image": "../image/products.img/fish.img/ca-map-colombia.jpg",
+    "shortDescription": "Dáng cực ngầu, bơi tầng giữa.",
+    "description": "Cá mập Colombia có hình dáng giống cá mập thu nhỏ, thích bơi theo nhóm và cần không gian rộng. Khi trưởng thành sẽ phát triển tốt trong môi trường nước lợ ổn định."
   },
   {
-    "id": "ca-kim-be",
-    "name": "Cá Kìm Bể",
+    "id": "ca-bay-mau",
+    "name": "Cá Bảy Màu",
     "species": "Cá",
     "waterType": "Nước lợ",
-    "price": 90000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Thân dài, bơi mặt nước.",
-    "description": "Cá Kìm Bể có thân dài, thường bơi ở tầng mặt và thích hợp với bể nước lợ."
+    "price": 15000,
+    "image": "../image/products.img/fish.img/ca-bay-mau.jpg",
+    "shortDescription": "Nhỏ nhắn, nhiều màu sắc rực rỡ.",
+    "description": "Cá bảy màu rất phổ biến nhờ màu sắc đa dạng và khả năng sinh sản tốt. Có thể sống ở nước ngọt nhưng cũng thích nghi tốt với môi trường nước lợ nhẹ."
+  },
+  {
+    "id": "ca-bong-rong",
+    "name": "Cá Bống Rồng",
+    "species": "Cá",
+    "waterType": "Nước lợ",
+    "price": 95000,
+    "image": "../image/products.img/fish.img/ca-bong-rong.JPG",
+    "shortDescription": "Cá đáy dạng dài, hoa văn lạ mắt.",
+    "description": "Cá bống rồng có thân hình thuôn dài, màu sắc đẹp và thường hoạt động sát đáy bể. Phù hợp cho bể nước lợ sạch, có nền mịn và dòng chảy nhẹ."
   },
   {
     "id": "ca-mandarin",
-    "name": "Cá Mandarin",
+    "name": "Cá Trạng Nguyên",
     "species": "Cá",
     "waterType": "Nước mặn",
     "price": 600000,
-    "image": "../image/ocean-bg.svg",
-    "shortDescription": "Cá màu sắc cực đẹp.",
-    "description": "Cá Mandarin có màu sắc sặc sỡ, nhưng khá khó nuôi vì yêu cầu thức ăn sống và môi trường ổn định."
+    "image": "../image/products.img/fish.img/ca-trang-nguyen.webp",
+    "shortDescription": "Cá biển nhỏ, màu sắc rực rỡ nổi bật.",
+    "description": "Cá Trạng Nguyên là loài cá biển có màu sắc sặc sỡ và hoa văn rất bắt mắt. Loài này khá khó nuôi, cần môi trường nước ổn định, bể trưởng thành và nguồn thức ăn phù hợp."
   }
 ]
