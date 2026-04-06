@@ -71,7 +71,7 @@ function taoCardSanPhamLienQuan(product) {
         <div class="product-footer">
           <span class="price">${Aqualife.formatCurrency(product.price)}</span>
           <button class="btn-add" data-id="${product.id}" type="button">
-            Them vao gio
+            Thêm vào giỏ
           </button>
         </div>
       </div>

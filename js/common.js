@@ -78,4 +78,30 @@ window.Aqualife = {
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartBadges();
+
+  // Hiệu ứng giọt nước khi click
+  document.addEventListener("click", (e) => {
+    for (let i = 0; i < 5; i++) {
+      createDroplet(e.clientX, e.clientY);
+    }
+  });
+
 });
+
+function createDroplet(x, y) {
+  const drop = document.createElement("div");
+  drop.className = "water-drop";
+  const size = 12 + Math.round(Math.random() * 10);
+  const offsetX = Math.random() * 20 - 10;
+  const offsetY = Math.random() * 20 - 10;
+  drop.style.width = `${size}px`;
+  drop.style.height = `${size}px`;
+  drop.style.left = `${x - size / 2 + offsetX}px`;
+  drop.style.top = `${y - size / 2 + offsetY}px`;
+  drop.style.setProperty("--tx", `${offsetX}px`);
+  drop.style.setProperty("--ty", `${offsetY}px`);
+  drop.style.setProperty("--r", `${Math.random() * 360}deg`);
+  document.body.appendChild(drop);
+  setTimeout(() => drop.remove(), 900);
+}
+

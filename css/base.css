@@ -22,9 +22,18 @@ body {
 }
 
 body {
+  cursor: url("../image/icon.img/cursor.png") 16 16, auto;
+}
+
+body {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #f8fbfe 0%, var(--bg) 100%);
+}
+
+/* Custom cursor for pointer elements */
+a, button, .btn, input[type="submit"], input[type="button"], .cart-link, .footer .newsletter button, input[type="checkbox"], input[type="radio"], select, textarea, [role="button"], [tabindex]:focus, .sidebar li, .checkbox-option, #sort, .btn-add, .pagination button, .btn-ghost, .btn-danger, img {
+  cursor: url("../image/icon.img/cursor2.png") 16 16, pointer !important;
 }
 
 a {
@@ -487,6 +496,38 @@ img {
 
 .hidden {
   display: none !important;
+}
+
+/* Water effects */
+.water-drop,
+.water-trail {
+  position: fixed;
+  pointer-events: none;
+  background-image: url("../image/icon.img/water.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.water-drop {
+  animation: drop-burst 0.85s ease-out forwards;
+}
+
+@keyframes drop-burst {
+  0% {
+    transform: scale(0.7) translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.1) translate(var(--tx, 0px), var(--ty, 0px)) rotate(var(--r, 0deg));
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.4) translate(var(--tx, 0px), var(--ty, 0px)) rotate(var(--r, 0deg));
+    opacity: 0;
+  }
 }
 
 @media (max-width: 980px) {
