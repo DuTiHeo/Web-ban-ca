@@ -17,6 +17,7 @@ async function khoiTao() {
     state.tatCaSanPham = await Aqualife.loadProducts();
 
     ganSuKien();
+    khoiTaoBoLocTuUrl();
     capNhatVaRender();
   } catch (err) {
     console.error("Lỗi tải sản phẩm:", err);
@@ -78,6 +79,29 @@ function ganFilterMoiTruong() {
         moiTruong: danhSachMoiTruong,
       });
     });
+  });
+}
+
+function khoiTaoBoLocTuUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  const mapMoiTruong = {
+    freshwater: "Nước ngọt",
+    brackish: "Nước lợ",
+    saltwater: "Nước mặn",
+  };
+  const moiTruong = mapMoiTruong[category];
+
+  if (!moiTruong) return;
+
+  state.moiTruong = [moiTruong];
+
+  const checkboxes = document.querySelectorAll(
+    "#environmentFilter input[type='checkbox']"
+  );
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = checkbox.value === moiTruong;
   });
 }
 
