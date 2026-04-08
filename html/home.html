@@ -6,6 +6,7 @@
   <title>Trang chủ - Aqualife</title>
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script defer src="../js/common.js"></script>
   <script defer src="../js/home.js"></script>
 </head>
@@ -28,7 +29,12 @@
 
       <!-- HERO -->
 <div class="hero">
-  <div>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="../video/video-nen.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
     <h1>Tận hưởng vẻ đẹp đại dương ngay tại nhà</h1>
     <button onclick="window.location.href='products.html'">Mua ngay</button>
   </div>
@@ -127,9 +133,15 @@
       <h3>Aqualife</h3>
       <p>Mang cả hệ sinh thái biển vào không gian sống của bạn với dịch vụ và sản phẩm cao cấp.</p>
       <div class="social">
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://youtube.com" target="_blank" rel="noreferrer">Youtube</a>
+        <a href="https://www.facebook.com/Cacanhthienduc/" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook social-icon facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/cristiano/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram social-icon instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@traicacanhthienuc8674" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <i class="fa-brands fa-youtube social-icon youtube"></i>
+        </a>
       </div>
     </div>
     <div class="footer-col">
