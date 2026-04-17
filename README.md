@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-`Aqualife` là dự án của nhóm 02 lớp NTT1165(225)_02-Thiết kế WEB được xây dựng bằng **HTML, CSS và JavaScript**, mô phỏng một trang web giới thiệu và bán cá cảnh cùng các sinh vật trong đại dương. Dự án tập trung vào việc tổ chức giao diện rõ ràng, hiển thị dữ liệu từ JSON, xử lý tương tác phía người dùng bằng JavaScript và tối ưu trải nghiệm trên nhiều kích thước màn hình.
+`Aqualife` là dự án của nhóm 05 lớp NTT1165(225)_02-Thiết kế WEB được xây dựng bằng **HTML, CSS và JavaScript**, mô phỏng một trang web giới thiệu và bán cá cảnh cùng các sinh vật trong đại dương. Dự án tập trung vào việc tổ chức giao diện rõ ràng, hiển thị dữ liệu từ JSON, xử lý tương tác phía người dùng bằng JavaScript và tối ưu trải nghiệm trên nhiều kích thước màn hình.
 
 ## Preview
 
@@ -138,7 +138,9 @@ Sau đó truy cập:
 ```text
 http://localhost:5500/html/home.html
 ```
+### Cách truy cập qua đường dẫn
 
+Bạn có thể truy cập website qua đường dẫn sau: https://dutiheo.github.io/Web-ban-ca/html/home.html
 ## Điểm nổi bật của project
 
 - Tổ chức thư mục rõ ràng, tách biệt giữa HTML, CSS, JS, JSON, image và video.
